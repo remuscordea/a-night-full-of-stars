@@ -9,7 +9,7 @@ t.color("white", "yellow")
 
 # Setari ecran
 screen = turtle.Screen()
-screen.bgcolor("#000000")
+screen.bgcolor("black")
 
 # Functie pentru desenare stea
 def draw_star(turtle_obj, size):
@@ -30,7 +30,7 @@ for _ in range(70):
     draw_star(t, star_size)
     t.end_fill()
 
-# Update ecran dupa finalizare executie
+# Actualizeaza ecran dupa finalizare executie
 screen.update()
 
 # Mentine fereastra deschisa dupa finalizare executie
