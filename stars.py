@@ -1,30 +1,24 @@
 import turtle
 import random
 
-# Set up the turtle
+# Setari generale
 t = turtle.Turtle()
 t.speed(100)
 t.hideturtle()
+t.color("white", "yellow")
 
-# Set up the screen
+# Setari ecran
 screen = turtle.Screen()
 screen.bgcolor("#000000")
 
-# Use the tracer() method to speed up the drawing
-# screen.tracer(0)
-
-# Define the star colors (edge and fill)
-t.color("white", "yellow")
-
-
-# Define a function to draw a star
+# Functie pentru desenare stea
 def draw_star(turtle_obj, size):
     for _ in range(5):
         turtle_obj.forward(size)
         turtle_obj.left(216)
 
 
-# Draw multiple stars of varying sizes at random locations
+# Deseneaza stele de diferite marimi si in locatii aleatorii
 for _ in range(70):
     x, y = random.randint(-400, 400), random.randint(-200, 200)
     star_size = random.randint(5, 25)
@@ -36,8 +30,8 @@ for _ in range(70):
     draw_star(t, star_size)
     t.end_fill()
 
-# Update the screen once all stars have been drawn
+# Update ecran dupa finalizare executie
 screen.update()
 
-# Keep the window open until the user closes it
+# Mentine fereastra deschisa dupa finalizare executie
 turtle.done()
