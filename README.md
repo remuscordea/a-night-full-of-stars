@@ -1,4 +1,4 @@
-**A small python app**
+# Just a small Python demo
 
 The app showcases a night sky with stars of different shapes and sizes that randomly appear in an animated manner.
 
